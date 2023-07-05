@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int t1, t2, t3;
+    float total_time;
+
+    
+    printf("Введіть час для першого гостя (t1): ");
+    scanf("%d", &t1);
+    printf("Введіть час для другого гостя (t2): ");
+    scanf("%d", &t2);
+    printf("Введіть час для третього гостя (t3): ");
+    scanf("%d", &t3);
+
+    total_time = 1.0 / t1 + 1.0 / t2 + 1.0 / t3;
+
+    printf("Гості зможуть з'їсти пиріг за %.2f годин.\n", 1.0 / total_time);
+
+    return 0;
+}
